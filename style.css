@@ -1,0 +1,74 @@
+body {
+  background-image: url(./images/pexels-israelzin-oliveira-16707585.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+#showDate {
+  font-size: 30px;
+  color: #232e2c !important;
+  text-shadow: 1px 1px 2px black, 0 0 45px black, 0 0 10px white !important;
+}
+.temperature {
+  font-size: 100px;
+  color: #232e2c !important;
+  text-shadow: 1px 1px 2px black, 0 0 45px black, 0 0 10px white !important;
+}
+#tempDisp {
+  margin-top: 300px !important;
+}
+#stateDisp {
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 45px black, 0 0 10px white !important;
+}
+#weatherDisp {
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 45px black, 0 0 10px white !important;
+}
+
+.content {
+  background-color: transparent;
+  max-width: 300px;
+  margin-left: auto !important;
+  box-shadow: 1px 1px 2px black, 0 0 45px black, 0 0 10px white !important;
+}
+.input input {
+  border: none;
+}
+.input input:focus {
+  outline: none;
+  border: none;
+}
+.countries li,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  line-height: 50px;
+  margin: 0px !important;
+}
+@media screen and (max-width: 992px) {
+  #tempDisp {
+    margin-top: 50px !important;
+  }
+  .content {
+    margin-left: none !important;
+    max-width: 100% !important;
+  }
+  .container {
+    margin: 0px;
+  }
+  .divider {
+    display: block;
+  }
+}

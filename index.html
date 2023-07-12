@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body onload="getDate()">
+    <nav class="parent">
+      <div class="dark-overlay">
+        <div class="row mt-3">
+          <div class="col-md-4 col-sm-12">
+            <div class="container">
+              <!-- input group -->
+              <div class="input mt-5">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    id="userInput"
+                    class="form-control"
+                    placeholder="Input your state"
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                  <button
+                    onclick="press()"
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    Check
+                  </button>
+                </div>
+              </div>
+
+              <!-- temperature display  -->
+              <div id="tempDisp" class="temperature"></div>
+            </div>
+            <div id="showDate"></div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <hr/ class="my-3 divider" >
+            <div class="container">
+              <div
+                class="content rounded my-5 p-5 shadow text-white"
+                id="main-display"
+              >
+                <h1 class="mb-5">Weather Forecast</h1>
+
+                <img
+                  id="img"
+                  src="./images/Flood-amico.svg"
+                  style="height: 300px; width: 250px"
+                  alt=""
+                />
+
+                <hr />
+
+                <table
+                  id="displayTable"
+                  class="table table-borderless table-responsive table-transparent table-striped text-center shadow my-5"
+                ></table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
